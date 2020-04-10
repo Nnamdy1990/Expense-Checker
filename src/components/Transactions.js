@@ -10,7 +10,7 @@ const Transactions = ({ transactions }) => {
     <li className={transactions.amount < 0 ? "minus" : "plus"}>
       {transactions.text}{" "}
       <span>
-        {sign}${Math.abs(transactions.amount)}
+        {sign}#{Math.abs(transactions.amount)}
       </span>
       <button
         onClick={() => deleteTransaction(transactions.id)}
